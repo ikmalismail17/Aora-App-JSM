@@ -1,5 +1,5 @@
 import { Image, ScrollView, Text, View } from 'react-native'
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 
 import { images } from '../../constants';
@@ -34,28 +34,28 @@ const SignUp = () => {
             Sign up to Aora
           </Text>
 
-          <FormField 
+          <FormField
             title="Username"
             value={form.username}
-            handleChangeText={(e)=> setForm({...form, username: e})}
+            handleChangeText={(e) => setForm({ ...form, username: e })}
             otherStyles="mt-7"
             keyboardType="user-name"
           />
-          <FormField 
+          <FormField
             title="Email"
             value={form.email}
-            handleChangeText={(e)=> setForm({...form, email: e})}
+            handleChangeText={(e) => setForm({ ...form, email: e })}
             otherStyles="mt-7"
             keyboardType="email-address"
           />
-          <FormField 
+          <FormField
             title="Password"
             value={form.password}
-            handleChangeText={(e)=> setForm({...form, password: e})}
+            handleChangeText={(e) => setForm({ ...form, password: e })}
             otherStyles="mt-7"
           />
 
-          <CustomButton 
+          <CustomButton
             title='Sign Up'
             handlePress={submit}
             containerStyles='mt-7'
